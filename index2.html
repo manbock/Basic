@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=~, initial-scale=1.0">
+    <title>제목</title>
+    <link rel="shortcut icon" href="https://play-lh.googleusercontent.com/Kbu0747Cx3rpzHcSbtM1zDriGFG74zVbtkPmVnOKpmLCS59l7IuKD5M3MKbaq_nEaZM" type="image/x-icon">
+    <style>
+        /* 주석: 커뮤니케이션을 위한 코멘트 */
+        *{margin: 0;padding: 0;}
+        .흥부{background-color: green; padding: 20px;}
+        /* 띄워쓰기: 자손 //
+           >:직계자식 */
+
+           /* 자식요소는 부모요소의 넓이를 따라감
+           부모요소는 자식요소의 높이를 따라감 */   
+        .흥부 .일자{background-color: black; color: antiquewhite; 
+            height: 50px; width: 200px;
+            margin:auto; /* 가운데 배치시킴 */      
+            margin-bottom: 20px;  
+        }
+        .흥부>.이자{width: 300px;
+            height: 300px;
+            overflow: hidden; /* 나의 영역에서 자식이 벗어났을 때 안보이게 함 */
+            margin: auto;
+        }
+        /* 태그를 부를때는 앞에 .를 사용하지 않는다 */
+        .흥부>.이자 img{}
+
+    </style>
+</head>
+<body>
+<!-- <시작></끝> -->
+<!-- 점심시간은 12:50 ~ 14:00 -->
+<div class="놀부"></div>
+<div class="흥부">
+    <div class="일자">흥부손자</div>
+    <div class="이자">
+            <img src="https://pbs.twimg.com/profile_images/893048667459813376/hHmB03eC_400x400.jpg" alt="이미지를 로드할 수 없습니다"> <!-- alt는 오류났을때 나옴 -->
+    </div>
+</div>
+
+</body>
+</html>
