@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+*{margin: 0; padding: 0;}
+
+.부모{
+    position:relative;
+    left: 200px;
+    top: 200px;
+    margin-top: 100px;
+    margin-left: 100px;
+    background-color: #ff6969; width: 1000px;
+background-image: url(https://manual.notch.one/0.9.23/en/docs/nodes/generators/grid/img/node-generators-grid-img.jpg);
+background-size: cover;
+margin-bottom: 3000px;
+}
+.부모 .자식{height: 200px; width: 200px;}
+.부모 .첫째{background-color: #5c75fe;
+left: 400px; position: relative; /* 원래 자리를 기억함 */}
+.부모 .둘째{background-color: #5cfe74; position: relative;
+position:absolute; left: 50px; top: 0px;}
+.부모 .셋째{background-color: #e65cfe;
+position: static; /* 기본값 */
+}
+.부모 .넷째{background-color: #a16840;
+position: fixed; right: 0; top: 200px;
+}

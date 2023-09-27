@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+.약::after{content:"";
+    display: block; clear: both;}
+
+*{margin: 0; padding: 0;}
+.어떤마을{background-color: hsl(0, 100%, 71%);
+padding: 20px;
+}
+.어떤마을 .놀부{background-color: #63fd7a;
+padding: 20px;
+}
+.어떤마을 .놀부 .자식{background-color: #9071ff;
+float:left;
+}
+.어떤마을 .놀부 .자식.하나{}
+.어떤마을 .놀부 .자식.둘{}
+.어떤마을 .놀부 .자식.셋{}
+.어떤마을 .놀부 .자식.넷{}
+.어떤마을 .놀부 .효자{clear: both;}
+
+
+.어떤마을 .흥부{background-color: #f2d116;
+margin-top: 30px; padding: 20px;
+}
+.어떤마을 .흥부:hover{color: blue;}
+.어떤마을 .흥부::before{content:"";}
+.어떤마을 .흥부::after{content:"";
+         display: block; clear: both;}
+
+/* ::berfore,::after는 inline요소(html에 없지만 css에서 만든 가상공간)이다. */
+/* inline요소는 넓이와 공간을 인식하지 못한다.
+clear:both는 부모가 공간을 인식하지 못할때 인식할 수 있도록 함
+단, clear:both는 block요소일때만 실행됨 */
+/* befor,after는 뒤에 content를 붙여야한다 */
+
+.어떤마을 .흥부 .자식{background-color: #9071ff;
+float:left;
+}
+.어떤마을 .흥부 .자식.하나{}
+.어떤마을 .흥부 .자식.둘{}
+.어떤마을 .흥부 .자식.셋{}
+.어떤마을 .흥부 .자식.넷{}
+
+.칠부{background-color: #0b604c; margin-top: 30px; padding: 20px;}
+.칠부 .자식{background-color: #5c0359;
+float: left;
+}
+.칠부 .자식.하나{}
+.칠부 .자식.둘{}
+.칠부 .자식.셋{}
+.칠부 .자식.넷{}
